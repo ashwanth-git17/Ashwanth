@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashwanth's Interactive Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background: white;
+            color: #2a5298;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background 0.3s ease;
+        }
+        button:hover {
+            background: #ddd;
+        }
+        #output {
+            margin-top: 30px;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, Ashwanth!</h1>
+    <p>Welcome to my pro interactive HTML page.</p>
+    <button onclick="showMessage()">Click Me</button>
+
+    <div id="output"></div>
+
+    <script>
+        function showMessage() {
+            const messages = [
+                "Yo Ashwanth, nice click! 😎",
+                "You're killing it, bro!",
+                "Workshop mode activated 💡",
+                "This page is looking pro 🔥",
+                "Keep going, Ashwanth!"
+            ];
+            const randomIndex = Math.floor(Math.random() * messages.length);
+            document.getElementById("output").textContent = messages[randomIndex];
+        }
+    </script>
+</body>
+</html>

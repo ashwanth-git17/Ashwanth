@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Simple HTML</title>
+</head>
+<body>
+    <h1>Hello, Ashwanth!</h1>
+    <p>This is your first simple HTML page in VS Code.</p>
+    <button onclick="alert('Yo nigga, you clicked it!')">Click Me</button>
+</body>
+</html>
